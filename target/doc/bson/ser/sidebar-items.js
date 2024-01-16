@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["Error"],"fn":["to_bson","to_bson_with_options","to_document","to_document_with_options","to_raw_document_buf","to_vec"],"struct":["Serializer","SerializerOptions"],"type":["Result"]};

@@ -1,0 +1,139 @@
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-pc-windows-msvc")
+cargo:rerun-if-env-changed=CC_x86_64-pc-windows-msvc
+CC_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_x86_64_pc_windows_msvc
+CC_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+DEBUG = Some("true")
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/constants.o" "-c" "brotli/c/common/constants.c"
+constants.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/context.o" "-c" "brotli/c/common/context.c"
+context.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/dictionary.o" "-c" "brotli/c/common/dictionary.c"
+dictionary.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/platform.o" "-c" "brotli/c/common/platform.c"
+platform.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/shared_dictionary.o" "-c" "brotli/c/common/shared_dictionary.c"
+shared_dictionary.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/transform.o" "-c" "brotli/c/common/transform.c"
+transform.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/dec/bit_reader.o" "-c" "brotli/c/dec/bit_reader.c"
+bit_reader.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/dec/decode.o" "-c" "brotli/c/dec/decode.c"
+decode.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/dec/huffman.o" "-c" "brotli/c/dec/huffman.c"
+huffman.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/dec/state.o" "-c" "brotli/c/dec/state.c"
+state.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/backward_references.o" "-c" "brotli/c/enc/backward_references.c"
+backward_references.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/backward_references_hq.o" "-c" "brotli/c/enc/backward_references_hq.c"
+backward_references_hq.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/bit_cost.o" "-c" "brotli/c/enc/bit_cost.c"
+bit_cost.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/block_splitter.o" "-c" "brotli/c/enc/block_splitter.c"
+block_splitter.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/brotli_bit_stream.o" "-c" "brotli/c/enc/brotli_bit_stream.c"
+brotli_bit_stream.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/cluster.o" "-c" "brotli/c/enc/cluster.c"
+cluster.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/command.o" "-c" "brotli/c/enc/command.c"
+command.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/compound_dictionary.o" "-c" "brotli/c/enc/compound_dictionary.c"
+compound_dictionary.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/compress_fragment.o" "-c" "brotli/c/enc/compress_fragment.c"
+compress_fragment.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/compress_fragment_two_pass.o" "-c" "brotli/c/enc/compress_fragment_two_pass.c"
+compress_fragment_two_pass.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/dictionary_hash.o" "-c" "brotli/c/enc/dictionary_hash.c"
+dictionary_hash.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/encode.o" "-c" "brotli/c/enc/encode.c"
+encode.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/encoder_dict.o" "-c" "brotli/c/enc/encoder_dict.c"
+encoder_dict.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/entropy_encode.o" "-c" "brotli/c/enc/entropy_encode.c"
+entropy_encode.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/fast_log.o" "-c" "brotli/c/enc/fast_log.c"
+fast_log.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/histogram.o" "-c" "brotli/c/enc/histogram.c"
+histogram.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/literal_cost.o" "-c" "brotli/c/enc/literal_cost.c"
+literal_cost.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/memory.o" "-c" "brotli/c/enc/memory.c"
+memory.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/metablock.o" "-c" "brotli/c/enc/metablock.c"
+metablock.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/static_dict.o" "-c" "brotli/c/enc/static_dict.c"
+static_dict.c
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "brotli/c/include" "-DBROTLI_BUILD_ENC_EXTRA_API" "-DBROTLI_HAVE_LOG2=1" "-FoC:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/utf8_util.o" "-c" "brotli/c/enc/utf8_util.c"
+utf8_util.c
+exit code: 0
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
+AR_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_msvc
+AR_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-msvc
+ARFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_msvc
+ARFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.35.32215\\bin\\HostX64\\x64\\lib.exe" "-out:C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\libbrotli.a" "-nologo" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/constants.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/context.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/dictionary.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/platform.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/shared_dictionary.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/common/transform.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/dec/bit_reader.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/dec/decode.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/dec/huffman.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/dec/state.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/backward_references.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/backward_references_hq.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/bit_cost.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/block_splitter.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/brotli_bit_stream.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/cluster.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/command.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/compound_dictionary.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/compress_fragment.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/compress_fragment_two_pass.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/dictionary_hash.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/encode.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/encoder_dict.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/entropy_encode.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/fast_log.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/histogram.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/literal_cost.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/memory.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/metablock.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/static_dict.o" "C:\\Users\\CKKCOBALT\\OneDrive\\Rust\\brson-rs\\brson\\target\\debug\\build\\brotlic-sys-aa0c5016dde416fa\\out\\brotli/c/enc/utf8_util.o"
+exit code: 0
+cargo:rustc-link-search=native=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.35.32215\atlmfc\lib\x64
+cargo:rustc-link-lib=static=brotli
+cargo:rustc-link-search=native=C:\Users\CKKCOBALT\OneDrive\Rust\brson-rs\brson\target\debug\build\brotlic-sys-aa0c5016dde416fa\out
+cargo:include=C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\brotlic-sys-0.2.2\brotli/c/include
+cargo:rerun-if-changed=brotli/c

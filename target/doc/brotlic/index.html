@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Brotlic"><title>brotlic - Rust</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../static.files/rustdoc-9ee3a5e31a2afa3e.css"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="../static.files/" data-current-crate="brotlic" data-themes="" data-resource-suffix="" data-rustdoc-version="1.75.0 (82e1608df 2023-12-21)" data-channel="1.75.0" data-search-js="search-8fbf244ebcf71464.js" data-settings-js="settings-74424d7eec62a23e.js" ><script src="../static.files/storage-fec3eaa3851e447d.js"></script><script defer src="../crates.js"></script><script defer src="../static.files/main-9dd44ab47b99a0fb.js"></script><noscript><link rel="stylesheet" href="../static.files/noscript-5d8b3c7633ad77ba.css"></noscript><link rel="alternate icon" type="image/png" href="../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc mod crate"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button></nav><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../brotlic/index.html">brotlic</a><span class="version">0.8.1</span></h2></div><div class="sidebar-elems"><ul class="block">
+            <li><a id="all-types" href="all.html">All Items</a></li></ul><section><ul class="block"><li><a href="#reexports">Re-exports</a></li><li><a href="#modules">Modules</a></li><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#functions">Functions</a></li></ul></section></div></nav><main><div class="width-limiter"><nav class="sub"><form class="search-form"><span></span><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="main-heading"><h1>Crate <a class="mod" href="#">brotlic</a><button id="copy-path" title="Copy item path to clipboard"><img src="../static.files/clipboard-7571035ce49a181d.svg" width="19" height="18" alt="Copy item path"></button></h1><span class="out-of-band"><a class="src" href="../src/brotlic/lib.rs.html#1-1044">source</a> · <button id="toggle-all-docs" title="collapse all docs">[<span>&#x2212;</span>]</button></span></div><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><h2 id="brotlic"><a href="#brotlic">Brotlic</a></h2>
+<p>Brotlic (or BrotliC) is a thin wrapper around <a href="https://github.com/google/brotli">brotli</a>. It
+provides Rust bindings to all compression and decompression APIs. On the fly
+compression and decompression is supported for both <code>BufRead</code> and <code>Write</code>
+via [<code>CompressorReader&lt;R&gt;</code>, <code>CompressorWriter&lt;W&gt;</code>, <code>DecompressorReader&lt;R&gt;</code>
+and <code>DecompressorWriter&lt;W&gt;</code>. For low-level instances, see <code>BrotliEncoder</code>
+and <code>BrotliDecoder</code>. These can be configured via <code>BrotliEncoderOptions</code> and
+<code>BrotliDecoderOptions</code> respectively.</p>
+<h3 id="high-level-abstractions"><a href="#high-level-abstractions">High level abstractions</a></h3>
+<p>When dealing with <a href="https://doc.rust-lang.org/std/io/trait.BufRead.html"><code>BufRead</code></a>:</p>
+<ul>
+<li><a href="decode/struct.DecompressorReader.html" title="struct brotlic::decode::DecompressorReader"><code>DecompressorReader&lt;R&gt;</code></a> - Reads a brotli compressed input stream and
+decompresses it.</li>
+<li><a href="encode/struct.CompressorReader.html" title="struct brotlic::encode::CompressorReader"><code>CompressorReader&lt;R&gt;</code></a> - Reads a stream and compresses it while reading.</li>
+</ul>
+<p>When dealing with <a href="https://doc.rust-lang.org/std/io/trait.Write.html"><code>Write</code></a>:</p>
+<ul>
+<li><a href="encode/struct.CompressorWriter.html" title="struct brotlic::encode::CompressorWriter"><code>CompressorWriter&lt;W&gt;</code></a> - Writes brotli compressed data to the underlying
+writer.</li>
+<li><a href="decode/struct.DecompressorWriter.html" title="struct brotlic::decode::DecompressorWriter"><code>DecompressorWriter&lt;W&gt;</code></a> - Writes brotli decompressed data to the
+underlying writer.</li>
+</ul>
+<p>To simplify this decision, the following table outlines all the differences:</p>
+<div><table><thead><tr><th></th><th>Input</th><th>Output</th><th>Wraps</th></tr></thead><tbody>
+<tr><td><a href="encode/struct.CompressorReader.html" title="struct brotlic::encode::CompressorReader"><code>CompressorReader&lt;R&gt;</code></a></td><td>Uncompressed</td><td>Compressed</td><td><a href="https://doc.rust-lang.org/std/io/trait.BufRead.html"><code>BufRead</code></a></td></tr>
+<tr><td><a href="decode/struct.DecompressorReader.html" title="struct brotlic::decode::DecompressorReader"><code>DecompressorReader&lt;R&gt;</code></a></td><td>Compressed</td><td>Uncompressed</td><td><a href="https://doc.rust-lang.org/std/io/trait.BufRead.html"><code>BufRead</code></a></td></tr>
+<tr><td><a href="encode/struct.CompressorWriter.html" title="struct brotlic::encode::CompressorWriter"><code>CompressorWriter&lt;W&gt;</code></a></td><td>Uncompressed</td><td>Compressed</td><td><a href="https://doc.rust-lang.org/std/io/trait.Write.html"><code>Write</code></a></td></tr>
+<tr><td><a href="decode/struct.DecompressorWriter.html" title="struct brotlic::decode::DecompressorWriter"><code>DecompressorWriter&lt;W&gt;</code></a></td><td>Compressed</td><td>Uncompressed</td><td><a href="https://doc.rust-lang.org/std/io/trait.Write.html"><code>Write</code></a></td></tr>
+</tbody></table>
+</div>
+<p>To compress a file with brotli:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>std::fs::File;
+<span class="kw">use </span>std::io::{<span class="self">self</span>, Write};
+
+<span class="kw">use </span>brotlic::CompressorWriter;
+
+<span class="kw">let </span><span class="kw-2">mut </span>input = File::open(<span class="string">&quot;test.txt&quot;</span>)<span class="question-mark">?</span>; <span class="comment">// uncompressed text file
+</span><span class="kw">let </span><span class="kw-2">mut </span>output = File::create(<span class="string">&quot;test.brotli&quot;</span>)<span class="question-mark">?</span>; <span class="comment">// compressed text output file
+</span><span class="kw">let </span><span class="kw-2">mut </span>output_compressed = CompressorWriter::new(output);
+
+output_compressed.write_all(<span class="string">b&quot;test&quot;</span>)<span class="question-mark">?</span>;
+</code></pre></div>
+<p>To decompress that same file:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>std::fs::File;
+<span class="kw">use </span>std::io::{<span class="self">self</span>, BufReader, Read};
+
+<span class="kw">use </span>brotlic::DecompressorReader;
+
+<span class="kw">let </span><span class="kw-2">mut </span>input = BufReader::new(File::open(<span class="string">&quot;test.brotli&quot;</span>)<span class="question-mark">?</span>); <span class="comment">// uncompressed text file
+</span><span class="kw">let </span><span class="kw-2">mut </span>input_decompressed = DecompressorReader::new(input); <span class="comment">// requires BufRead
+
+</span><span class="kw">let </span><span class="kw-2">mut </span>text = String::new();
+input_decompressed.read_to_string(<span class="kw-2">&amp;mut </span>text)<span class="question-mark">?</span>;
+
+<span class="macro">assert_eq!</span>(text, <span class="string">&quot;test&quot;</span>);
+</code></pre></div>
+<p>To compress and decompress in memory:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>std::io::{<span class="self">self</span>, Read, Write};
+
+<span class="kw">use </span>brotlic::{CompressorWriter, DecompressorReader};
+
+<span class="kw">let </span>input = <span class="macro">vec!</span>[<span class="number">0</span>; <span class="number">1024</span>];
+
+<span class="comment">// create a wrapper around Write that supports on the fly brotli compression.
+</span><span class="kw">let </span><span class="kw-2">mut </span>compressor = CompressorWriter::new(Vec::new()); <span class="comment">// Vec implements Write
+</span>compressor.write_all(input.as_slice());
+<span class="kw">let </span>compressed_input = compressor.into_inner()<span class="question-mark">?</span>; <span class="comment">// read to vec
+
+// create a wrapper around BufRead that supports on the fly brotli decompression.
+</span><span class="kw">let </span><span class="kw-2">mut </span>decompressor = DecompressorReader::new(compressed_input.as_slice()); <span class="comment">// slice is BufRead
+</span><span class="kw">let </span><span class="kw-2">mut </span>decompressed_input = Vec::new();
+
+decompressor.read_to_end(<span class="kw-2">&amp;mut </span>decompressed_input)<span class="question-mark">?</span>;
+
+<span class="macro">assert_eq!</span>(input, decompressed_input);
+</code></pre></div>
+<h3 id="customizing-compression-quality"><a href="#customizing-compression-quality">Customizing compression quality</a></h3>
+<p>Sometimes it can be desirable to trade run-time costs for an even better
+compression ratio:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>brotlic::{BlockSize, BrotliEncoderOptions, CompressorWriter, Quality, WindowSize};
+
+<span class="kw">let </span>encoder = BrotliEncoderOptions::new()
+    .quality(Quality::best())
+    .window_size(WindowSize::best())
+    .block_size(BlockSize::best())
+    .build()<span class="question-mark">?</span>;
+
+<span class="kw">let </span>compressed_writer = CompressorWriter::with_encoder(encoder, Vec::new());
+</code></pre></div>
+<p>It is recommended to not use the encoder directly but instead pass it onto
+the higher level abstractions like <code>CompressorWriter&lt;W&gt;</code> or
+<code>DecompressorReader&lt;R&gt;</code>.</p>
+</div></details><h2 id="reexports" class="small-section-header"><a href="#reexports">Re-exports</a></h2><ul class="item-table"><li><div class="item-name" id="reexport.BrotliDecoder"><code>pub use decode::<a class="struct" href="decode/struct.BrotliDecoder.html" title="struct brotlic::decode::BrotliDecoder">BrotliDecoder</a>;</code></div></li><li><div class="item-name" id="reexport.BrotliDecoderOptions"><code>pub use decode::<a class="struct" href="decode/struct.BrotliDecoderOptions.html" title="struct brotlic::decode::BrotliDecoderOptions">BrotliDecoderOptions</a>;</code></div></li><li><div class="item-name" id="reexport.DecompressorReader"><code>pub use decode::<a class="struct" href="decode/struct.DecompressorReader.html" title="struct brotlic::decode::DecompressorReader">DecompressorReader</a>;</code></div></li><li><div class="item-name" id="reexport.DecompressorWriter"><code>pub use decode::<a class="struct" href="decode/struct.DecompressorWriter.html" title="struct brotlic::decode::DecompressorWriter">DecompressorWriter</a>;</code></div></li><li><div class="item-name" id="reexport.BrotliEncoder"><code>pub use encode::<a class="struct" href="encode/struct.BrotliEncoder.html" title="struct brotlic::encode::BrotliEncoder">BrotliEncoder</a>;</code></div></li><li><div class="item-name" id="reexport.BrotliEncoderOptions"><code>pub use encode::<a class="struct" href="encode/struct.BrotliEncoderOptions.html" title="struct brotlic::encode::BrotliEncoderOptions">BrotliEncoderOptions</a>;</code></div></li><li><div class="item-name" id="reexport.CompressorReader"><code>pub use encode::<a class="struct" href="encode/struct.CompressorReader.html" title="struct brotlic::encode::CompressorReader">CompressorReader</a>;</code></div></li><li><div class="item-name" id="reexport.CompressorWriter"><code>pub use encode::<a class="struct" href="encode/struct.CompressorWriter.html" title="struct brotlic::encode::CompressorWriter">CompressorWriter</a>;</code></div></li></ul><h2 id="modules" class="small-section-header"><a href="#modules">Modules</a></h2><ul class="item-table"><li><div class="item-name"><a class="mod" href="decode/index.html" title="mod brotlic::decode">decode</a></div><div class="desc docblock-short">Module that contains the brotli decoder instances</div></li><li><div class="item-name"><a class="mod" href="encode/index.html" title="mod brotlic::encode">encode</a></div><div class="desc docblock-short">Module that contains the brotli encoder instances</div></li></ul><h2 id="structs" class="small-section-header"><a href="#structs">Structs</a></h2><ul class="item-table"><li><div class="item-name"><a class="struct" href="struct.BlockSize.html" title="struct brotlic::BlockSize">BlockSize</a></div><div class="desc docblock-short">The recommended input block size (in bits) to use for compression.</div></li><li><div class="item-name"><a class="struct" href="struct.CompressError.html" title="struct brotlic::CompressError">CompressError</a></div><div class="desc docblock-short">An error returned by <a href="fn.compress.html" title="fn brotlic::compress"><code>compress</code></a>.</div></li><li><div class="item-name"><a class="struct" href="struct.DecompressError.html" title="struct brotlic::DecompressError">DecompressError</a></div><div class="desc docblock-short">An error returned by <a href="fn.decompress.html" title="fn brotlic::decompress"><code>decompress</code></a>.</div></li><li><div class="item-name"><a class="struct" href="struct.IntoInnerError.html" title="struct brotlic::IntoInnerError">IntoInnerError</a></div><div class="desc docblock-short">An error returned by <code>into_inner</code>.</div></li><li><div class="item-name"><a class="struct" href="struct.LargeWindowSize.html" title="struct brotlic::LargeWindowSize">LargeWindowSize</a></div><div class="desc docblock-short">The large sliding window size (in bits) to use for compression.</div></li><li><div class="item-name"><a class="struct" href="struct.Quality.html" title="struct brotlic::Quality">Quality</a></div><div class="desc docblock-short">Quality level of the brotli compression</div></li><li><div class="item-name"><a class="struct" href="struct.WindowSize.html" title="struct brotlic::WindowSize">WindowSize</a></div><div class="desc docblock-short">The sliding window size (in bits) to use for compression.</div></li></ul><h2 id="enums" class="small-section-header"><a href="#enums">Enums</a></h2><ul class="item-table"><li><div class="item-name"><a class="enum" href="enum.CompressionMode.html" title="enum brotlic::CompressionMode">CompressionMode</a></div><div class="desc docblock-short">Allows to tune a brotli compressor for a specific type of input.</div></li><li><div class="item-name"><a class="enum" href="enum.SetParameterError.html" title="enum brotlic::SetParameterError">SetParameterError</a></div><div class="desc docblock-short">An error returned by <a href="encode/struct.BrotliEncoderOptions.html#method.build" title="method brotlic::encode::BrotliEncoderOptions::build"><code>BrotliEncoderOptions::build</code></a> and
+<a href="decode/struct.BrotliDecoderOptions.html#method.build" title="method brotlic::decode::BrotliDecoderOptions::build"><code>BrotliDecoderOptions::build</code></a></div></li></ul><h2 id="functions" class="small-section-header"><a href="#functions">Functions</a></h2><ul class="item-table"><li><div class="item-name"><a class="fn" href="fn.compress.html" title="fn brotlic::compress">compress</a></div><div class="desc docblock-short">Read all bytes from <code>input</code> and compress them into <code>output</code>, returning how
+many bytes were written.</div></li><li><div class="item-name"><a class="fn" href="fn.compress_bound.html" title="fn brotlic::compress_bound">compress_bound</a></div><div class="desc docblock-short">Returns an upper bound for compression.</div></li><li><div class="item-name"><a class="fn" href="fn.compress_estimate_max_mem_usage.html" title="fn brotlic::compress_estimate_max_mem_usage">compress_estimate_max_mem_usage</a></div><div class="desc docblock-short">Returns peak memory usage for a given quality and window size</div></li><li><div class="item-name"><a class="fn" href="fn.decompress.html" title="fn brotlic::decompress">decompress</a></div><div class="desc docblock-short">Read all bytes from <code>input</code> and decompress them into <code>output</code>, returning how
+many bytes were written.</div></li></ul></section></div></main></body></html>

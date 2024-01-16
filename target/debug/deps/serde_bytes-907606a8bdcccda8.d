@@ -1,0 +1,10 @@
+C:\Users\CKKCOBALT\OneDrive\Rust\brson-rs\brson\target\debug\deps\libserde_bytes-907606a8bdcccda8.rmeta: C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\lib.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\bytearray.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\bytes.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\de.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\ser.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\bytebuf.rs
+
+C:\Users\CKKCOBALT\OneDrive\Rust\brson-rs\brson\target\debug\deps\serde_bytes-907606a8bdcccda8.d: C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\lib.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\bytearray.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\bytes.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\de.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\ser.rs C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\bytebuf.rs
+
+C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\lib.rs:
+C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\bytearray.rs:
+C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\bytes.rs:
+C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\de.rs:
+C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\ser.rs:
+C:\Users\CKKCOBALT\.cargo\registry\src\index.crates.io-6f17d22bba15001f\serde_bytes-0.11.14\src\bytebuf.rs:

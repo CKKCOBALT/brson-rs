@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["Error","UuidRepresentation"],"struct":["Uuid"],"type":["Result"]};
