@@ -13,7 +13,9 @@ fn brotli_compress(input: &[u8]) -> Vec<u8> {
 }
 
 fn brotli_decompress(input: &[u8]) -> Vec<u8> {
-    let mut writer = brotli::DecompressorWriter::new(Vec::new() , 4096 /* buffer size */);
+    let mut writer = brotli::DecompressorWriter::new(
+        Vec::new(),
+        4096);
     writer.write_all(input).unwrap();
     writer.into_inner().unwrap()
 }
