@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["DecodeError","DecoderInfo"],"struct":["BrotliDecoder","BrotliDecoderOptions","DecodeResult","DecompressorReader","DecompressorWriter","WriterPanicked"]};

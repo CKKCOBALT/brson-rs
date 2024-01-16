@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["CompressionMode","SetParameterError"],"fn":["compress","compress_bound","compress_estimate_max_mem_usage","decompress"],"mod":["decode","encode"],"struct":["BlockSize","CompressError","DecompressError","IntoInnerError","LargeWindowSize","Quality","WindowSize"]};

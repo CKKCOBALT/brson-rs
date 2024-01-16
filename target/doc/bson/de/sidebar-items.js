@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["Error"],"fn":["from_bson","from_bson_with_options","from_document","from_document_with_options","from_reader","from_reader_utf8_lossy","from_slice","from_slice_utf8_lossy"],"struct":["Deserializer","DeserializerOptions"],"type":["Result"]};
