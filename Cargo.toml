@@ -9,5 +9,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-brotli = "3.4.0"
+brotli = "6.0.0"
 bson = "2.8.1"
